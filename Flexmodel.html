@@ -15,8 +15,13 @@
             font-family: 'Times New Roman', Times, serif;
             font-size: 30px;
         }
+        header h1{
+            flex-wrap: wrap;
+        }
+        
+        
         body{
-            background-color: #F0F0F0;
+            background-color: #A0B2A6;
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 10px;
@@ -25,20 +30,37 @@
             background-color: #94A89A;
             color: white;
             padding: 10px;
-            font-size: 20px;
+            font-size: 25px;
             box-shadow: 0 4px 8px rgba(7, 7, 7, 7.2);
             margin:0px;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            align-self: center;
+
+            
         }
-        
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style:none;
+            flex-wrap: wrap;
+            border-style:groove;
+            border-width: 0.2cm;
+            align-self: center;
+            
+        }
         nav li {
-            display: inline;
             margin-right: 10px;
+            align-self: center;
         } 
         nav ul li a {
             text-decoration: none;
             color: #000;
             padding: 5px 10px;
             border-radius: 5px;
+            align-self: center;
         }
         aside ul li a {
             text-decoration: none;
@@ -102,7 +124,52 @@
             bottom: 0;
             box-shadow: 0 4px 8px rgba(7, 7, 7, 7.2);
         }
-    
+
+        section.flex-container {
+            display: flex;
+            background-color: #E4DFDA;
+            padding: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        
+        .flex-item{
+            background-color: #CBD4C2;
+            padding: 20px;
+            margin: 10px;
+            border: #94A89A solid 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(7, 7, 7, 7.2);
+            flex: 1; 
+            flex-wrap: wrap;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .flex-item h2 {
+            font-size: 24px;
+            padding: 20px;
+            margin: 30px 0; 
+            flex-wrap: wrap;
+            flex: 1; 
+        }
+        .flex-item p {
+            font-size: 18px;
+            padding: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            flex: 1; 
+        }
+        .halaman {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+        
+       
     </style>
 <head>
     <meta charset="UTF-8">
@@ -113,7 +180,7 @@
     <header>
         <link rel="stylesheet" type="text/css" href="pads.css">
         <h1>MedErbs</h1>
-        <p>medicinal herbs and various plant based medicine</p>
+        <p>Medicinal herbs and various plant based medicine</p>
     </header>     
     <nav>
         <ul>
@@ -134,8 +201,24 @@
         <h2>About Us</h2>
         <p>This site is known for its Medicinal herbs, also known as medicinal plants, are either collected from the wild or intentionally grown for their medicinal value. The leaves, bark, stems, roots, seeds, and/or flowers of a plant may be used to create herbal remedies. Some commonly used medicinal herbs include echinacea, dong quai, and garlic.
         </p>  
-    </section>             
-
+    </section> 
+    <section class="flex-container">
+        <h2>TRENDING PLANTS</h2>
+        <div class="halaman">
+            <div class="flex-item">
+                <p>BILLBERY
+                </p>
+            </div>
+            <div class="flex-item">
+                <p>ARNICA
+                </p>
+            </div>
+            <div class="flex-item">
+                <p>BASIL
+                </p>
+                </div>
+        </div>
+    </section>            
     <article>
         <h2>Latest News</h2>
         <ul>
